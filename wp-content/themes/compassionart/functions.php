@@ -187,7 +187,7 @@ if ( ! function_exists( 'page_menu' ) ) {
                                         <div class="hover-text">
                                             <span class="img-title">'.$menu_item->title.'</span>
                                         </div>
-                                        <div class="hover-img">'. get_the_post_thumbnail($menu_item->object_id,'full').'</div>
+                                        <div class="hover-img">'. get_the_post_thumbnail($menu_item->object_id,'medium').'</div>
                                     </a>
                                 </div>';
             }
