@@ -1,5 +1,6 @@
 <?php 
 	global $post;
+	$post_thumbnail_id = get_post_thumbnail_id();
    	$args = array(
        'order'          => 'ASC',
        'post_type'      => 'attachment',
