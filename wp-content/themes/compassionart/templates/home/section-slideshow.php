@@ -46,6 +46,8 @@
 						</div>
 				</div>
 
+			<?php echo($images);?>
+
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner">
 			    <div class="item active">
