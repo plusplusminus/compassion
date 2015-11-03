@@ -15,7 +15,7 @@
    foreach ($attachments as $attachment) { 
            $image_attributes = wp_get_attachment_image_src( $attachment->ID,'full'); 
            $images .= '
-                       <div class="item">
+                       <div class="item active">
                            <img class="img-responsive" src="'.$image_attributes[0].'">
                        </div>
                    ';
