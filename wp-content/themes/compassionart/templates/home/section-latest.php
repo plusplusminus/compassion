@@ -4,36 +4,6 @@
 				<div class="row">
 					<div class="col-lg-10 col-lg-offset-1">
 						<div class="row">
-							<div class="col-md-4">
-								<a class="hover-block" href="/weddings">
-									<div class="hover-text">
-										<span class="img-title">Weddings</span>
-									</div>
-										<div class="hover-img">
-										<img class="img-responsive" src="<?php bloginfo('stylesheet_directory' );?>/library/images/_DSC1445n copy.jpg"/>
-									</div>
-								</a>
-							</div>
-							<div class="col-md-4">
-								<a class="hover-block" href="/lifestyle">
-									<div class="hover-text">
-										<span class="img-title">Lifestyle</span>
-									</div>
-										<div class="hover-img">
-										<img class="img-responsive" src="<?php bloginfo('stylesheet_directory' );?>/library/images/_DSC0475nn copy.jpg"/>
-									</div>
-								</a>
-							</div>
-							<div class="col-md-4">
-								<a class="hover-block" href="/commercial">
-									<div class="hover-text">
-										<span class="img-title">Commercial</span>
-									</div>
-										<div class="hover-img">
-										<img class="img-responsive" src="<?php bloginfo('stylesheet_directory' );?>/library/images/_DSC3786n copy.jpg"/>
-									</div>
-								</a>
-							</div>
 
 							<?php page_menu('latest-nav'); ?>
 
