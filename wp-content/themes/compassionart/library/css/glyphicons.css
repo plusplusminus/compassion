@@ -1,0 +1,12 @@
+body:before { 
+                            white-space: pre; 
+                            font-family: monospace; 
+<<<<<<< HEAD
+                            content: 'Less NameError: variable @icon-font-path is undefined in \\Users\\admin\\Documents\\Sites\\marinas\\wp-content\\themes\\marinas\\library\\less\\bootstrap\\glyphicons.less on line 13, column 8: \A 12   font-family: \'Glyphicons Halflings\'; \A 13   src: ~\"url(\'@{icon-font-path}@{icon-font-name}.eot\')\"; \A 14   src: ~\"url(\'@{icon-font-path}@{icon-font-name}.eot?#iefix\') format(\'embedded-opentype\')\", \A  \A '; } 
+=======
+                            content: 'Less NameError: variable @icon-font-path is undefined in \\Users\\iaanvn\\Sites\\marinas\\wp-content\\themes\\marinas\\library\\less\\bootstrap\\glyphicons.less on line 13, column 8: \A 12   font-family: \'Glyphicons Halflings\'; \A 13   src: ~\"url(\'@{icon-font-path}@{icon-font-name}.eot\')\"; \A 14   src: ~\"url(\'@{icon-font-path}@{icon-font-name}.eot?#iefix\') format(\'embedded-opentype\')\", \A  \A '; } 
+>>>>>>> 3754e1a232ee85477778b1f11446d7fe4ba9aa37
+                            
+                            body * { 
+                            display: none; 
+                            } 

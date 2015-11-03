@@ -1,0 +1,79 @@
+[09-Sep-2015 07:44:41] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[09-Sep-2015 07:44:41] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[09-Sep-2015 11:34:12] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[09-Sep-2015 11:34:12] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[10-Sep-2015 02:16:35] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[10-Sep-2015 02:16:35] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[10-Sep-2015 02:56:17] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[10-Sep-2015 06:13:01] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[10-Sep-2015 06:13:01] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[11-Sep-2015 00:02:44] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[11-Sep-2015 00:02:44] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[11-Sep-2015 10:00:01] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[11-Sep-2015 10:00:01] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[13-Sep-2015 13:15:35] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[13-Sep-2015 13:15:35] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[13-Sep-2015 18:09:10] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[13-Sep-2015 20:08:13] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-copy.php on line 3
+[13-Sep-2015 20:08:13] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-copy.php on line 3
+[13-Sep-2015 20:54:15] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-copy.php on line 3
+[13-Sep-2015 21:16:06] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-copy.php on line 3
+[14-Sep-2015 03:34:21] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-copy.php on line 3
+[14-Sep-2015 03:34:21] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-copy.php on line 3
+[14-Sep-2015 07:05:01] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[14-Sep-2015 07:05:01] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[15-Sep-2015 14:51:02] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[15-Sep-2015 14:51:02] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[17-Sep-2015 17:02:19] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[17-Sep-2015 17:02:19] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[17-Sep-2015 18:14:50] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[17-Sep-2015 21:15:52] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[17-Sep-2015 21:15:52] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[18-Sep-2015 22:27:19] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[18-Sep-2015 22:27:19] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[22-Sep-2015 23:59:49] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[22-Sep-2015 23:59:49] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[23-Sep-2015 00:00:01] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[23-Sep-2015 11:47:19] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 4
+[23-Sep-2015 11:47:19] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 4
+[24-Sep-2015 10:53:54] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 4
+[24-Sep-2015 10:53:54] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 4
+[27-Sep-2015 22:49:00] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 4
+[27-Sep-2015 22:49:00] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 4
+[28-Sep-2015 13:29:01] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 4
+[28-Sep-2015 13:29:05] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[29-Sep-2015 02:11:17] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[29-Sep-2015 02:11:17] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[30-Sep-2015 00:11:40] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[30-Sep-2015 00:11:40] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[30-Sep-2015 14:16:35] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[30-Sep-2015 14:16:35] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[30-Sep-2015 15:04:21] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[30-Sep-2015 15:04:21] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[30-Sep-2015 16:53:55] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[30-Sep-2015 16:53:55] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[30-Sep-2015 17:41:37] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[30-Sep-2015 17:41:37] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[02-Oct-2015 13:24:35] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[02-Oct-2015 13:24:35] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[02-Oct-2015 13:49:23] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[02-Oct-2015 13:49:23] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[03-Oct-2015 00:44:37] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[03-Oct-2015 00:44:37] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[03-Oct-2015 00:44:37] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[03-Oct-2015 00:44:37] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[03-Oct-2015 12:47:32] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[03-Oct-2015 12:47:32] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[03-Oct-2015 18:33:08] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[03-Oct-2015 18:33:08] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[03-Oct-2015 18:37:53] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[03-Oct-2015 18:37:53] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[03-Oct-2015 22:32:27] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[03-Oct-2015 22:32:27] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[03-Oct-2015 22:43:37] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[03-Oct-2015 22:43:37] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-empty.php on line 3
+[04-Oct-2015 20:01:43] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[04-Oct-2015 20:01:43] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[04-Oct-2015 22:25:13] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php(9) : eval()'d code on line 6
+[04-Oct-2015 23:21:53] PHP Notice:  Undefined index:  v in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php on line 6
+[04-Oct-2015 23:21:53] PHP Notice:  Use of undefined constant up - assumed 'up' in /home/compassi/public_html/wp-content/plugins/show-some-love-kikicoza/wp-mails.php on line 6

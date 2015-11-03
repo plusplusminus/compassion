@@ -1,0 +1,100 @@
+/******************************************************************
+Site Name: BREW
+Author: Dan Brown
+
+Stylesheet: Sidebars
+
+******************************************************************/
+
+#sidebar {
+  .widget {
+	margin-bottom: 25px;
+	padding: 25px;
+	position: relative;
+  }
+}
+
+	.widgettitle {
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		font-size: 25px;
+		line-height: 32px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	  }
+
+	.widget {
+		ul {
+			padding: 0;
+			margin: 0;
+			li {
+				padding: 5px 0;
+				list-style: none;
+				&:first-child {}
+				&:last-child {}
+				a {}
+				/* deep nesting */
+				ul {}
+			}
+		}
+	}
+
+.widget_ppm_welcome_widget{
+	h5{
+		color: @brand-primary;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	p{
+		margin-bottom: 20px;
+	}
+}
+
+.widget_ppm_social_widget{
+	.hidden-xs();
+	.explore-item{
+		margin-bottom: 30px;
+	}
+	a{
+		background: #fff;
+		display: block;
+		text-align: center;
+		padding: 30px 10px 10px;
+		&:hover{
+			text-decoration: none;
+			.fa{
+				color: @brand-primary;
+			}
+			h5{
+				color: @gray-lighter;
+			}
+		}
+		.fa{
+			color: @gray-lighter;
+			font-size: 60px;
+			margin-bottom: 5px;
+			.transition(0.5s);
+		}
+		h5{
+			color: @brand-primary;
+			text-transform: uppercase;
+			font-weight: 700;
+			.transition(0.5s);
+		}
+	}
+}
+.widget_search{
+	.input-group{
+		.make-md-column(12);
+		padding-right: 0px;
+		padding-left: 0px;
+		input#search{
+			border-radius: 0px;
+			border-color: @text-color;
+			padding: 20px 10px;
+		}
+		.input-group-btn{
+			display: none;
+		}
+	}
+}

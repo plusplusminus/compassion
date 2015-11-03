@@ -1,0 +1,12 @@
+body:before { 
+                            white-space: pre; 
+                            font-family: monospace; 
+<<<<<<< HEAD
+                            content: 'Less NameError: .border-right-radius is undefined in \\Users\\admin\\Documents\\Sites\\marinas\\wp-content\\themes\\marinas\\library\\less\\bootstrap\\button-groups.less on line 62, column 5: \A 61   &:not(:last-child):not(.dropdown-toggle) { \A 62     .border-right-radius(0); \A 63   } \A  \A '; } 
+=======
+                            content: 'Less NameError: .border-right-radius is undefined in \\Users\\iaanvn\\Sites\\marinas\\wp-content\\themes\\marinas\\library\\less\\bootstrap\\button-groups.less on line 62, column 5: \A 61   &:not(:last-child):not(.dropdown-toggle) { \A 62     .border-right-radius(0); \A 63   } \A  \A '; } 
+>>>>>>> 3754e1a232ee85477778b1f11446d7fe4ba9aa37
+                            
+                            body * { 
+                            display: none; 
+                            } 
