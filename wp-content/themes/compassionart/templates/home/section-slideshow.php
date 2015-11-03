@@ -1,25 +1,24 @@
 <?php 
 	global $post;
-   	$post_thumbnail_id = get_post_thumbnail_id();
    	$args = array(
        'order'          => 'ASC',
        'post_type'      => 'attachment',
        'post_parent'    => $post->ID,
        'post_mime_type' => 'image',
        'numberposts'    => -1,
-       'orderby' => 'menu_order',
+       'orderby' 		=> 'menu_order',
    );
 
    $attachments = get_posts($args);  
 
-                               foreach ($attachments as $attachment) { 
-                                       $image_attributes = wp_get_attachment_image_src( $attachment->ID,'full'); 
-                                       $images .= '
-                                                   <div class="item thumb-container">
-                                                       <img draggable="true" class="img-responsive" src="'.$image_attributes[0].'">
-                                                   </div>
-                                               ';
-                               }
+   foreach ($attachments as $attachment) { 
+           $image_attributes = wp_get_attachment_image_src( $attachment->ID,'full'); 
+           $images .= '
+                       <div class="item">
+                           <img class="img-responsive" src="'.$image_attributes[0].'">
+                       </div>
+                   ';
+   }
 ?>
 
 
@@ -38,48 +37,17 @@
 			  </ol>
 
 				<div class="heading-text-slideshow">
-						<div class="inner container">
-							<h2 class="slideshow-heading">Our Passion towards love, that is what keeps us here, so we may do it once more.</h2>
-							<p>
-								<a href="#bookus" class="btn btn-dark">Book Us</a>
-							</p>
-						</div>
+					<div class="inner container">
+						<h2 class="slideshow-heading">Our Passion towards love, that is what keeps us here, so we may do it once more.</h2>
+						<p>
+							<a href="#bookus" class="btn btn-dark">Book Us</a>
+						</p>
+					</div>
 				</div>
-
-			<?php echo($images);?>
 
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner">
-			    <div class="item active">
-			      <img class="img-responsive" src="<?php bloginfo('stylesheet_directory' );?>/library/images/_DSC1528s.jpg" alt="...">
-			      <div class="carousel-caption">
-
-			      </div>
-			    </div>
-			    <div class="item">
-			      <img class="img-responsive" src="<?php bloginfo('stylesheet_directory' );?>/library/images/_DSC4784s.jpg" alt="...">
-			      <div class="carousel-caption">
-
-			      </div>
-			    </div>
-			    <div class="item">
-			      <img class="img-responsive" src="<?php bloginfo('stylesheet_directory' );?>/library/images/_DSC7116.jpg" alt="...">
-			      <div class="carousel-caption">
-
-			      </div>
-			    </div>
-			    <div class="item">
-			      <img class="img-responsive" src="<?php bloginfo('stylesheet_directory' );?>/library/images/_DSC8885.jpg" alt="...">
-			      <div class="carousel-caption">
-
-			      </div>
-			    </div>
-			    <div class="item">
-			      <img class="img-responsive" src="<?php bloginfo('stylesheet_directory' );?>/library/images/DSC_2712bw.jpg" alt="...">
-			      <div class="carousel-caption">
-
-			      </div>
-			    </div>
+				<?php echo($images);?>
 			  </div>
 
 			  <!-- Controls -->
