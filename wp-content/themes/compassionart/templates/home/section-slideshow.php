@@ -1,25 +1,19 @@
 <?php 
 	global $post;
-	$post_thumbnail_id = get_post_thumbnail_id();
+   	$post_thumbnail_id = get_post_thumbnail_id();
    	$args = array(
        'order'          => 'ASC',
        'post_type'      => 'attachment',
        'post_parent'    => $post->ID,
        'post_mime_type' => 'image',
        'numberposts'    => -1,
-       'orderby' 		=> 'menu_order',
+       'orderby' => 'menu_order',
    );
 
    $attachments = get_posts($args);  
+   $count = 0;
 
-   foreach ($attachments as $attachment) { 
-           $image_attributes = wp_get_attachment_image_src( $attachment->ID,'full'); 
-           $images .= '
-                       <div class="item active">
-                           <img class="img-responsive" src="'.$image_attributes[0].'">
-                       </div>
-                   ';
-   }
+                               
 ?>
 
 
@@ -38,17 +32,23 @@
 			  </ol>
 
 				<div class="heading-text-slideshow">
-					<div class="inner container">
-						<h2 class="slideshow-heading">Our Passion towards love, that is what keeps us here, so we may do it once more.</h2>
-						<p>
-							<a href="#bookus" class="btn btn-dark">Book Us</a>
-						</p>
-					</div>
+						<div class="inner container">
+							<h2 class="slideshow-heading">Our Passion towards love, that is what keeps us here, so we may do it once more.</h2>
+							<p>
+								<a href="#bookus" class="btn btn-dark">Book Us</a>
+							</p>
+						</div>
 				</div>
 
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner">
-				<?php echo($images);?>
+
+			  	<?php foreach ($attachments as $attachment) { $count++; $image_attributes = wp_get_attachment_image_src( $attachment->ID,'full'); ?>
+			  		<div class="item <?php if ($count == 1) echo 'active'; ?>">
+				      	<img class="img-responsive" src="<?php echo $image_attributes[0]; ?>">
+				    </div>
+               	<?php } ?>
+			    
 			  </div>
 
 			  <!-- Controls -->
