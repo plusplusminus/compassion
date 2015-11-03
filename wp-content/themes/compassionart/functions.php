@@ -186,6 +186,7 @@ if ( ! function_exists( 'page_menu' ) ) {
                                     <a class="hover-block" href="'.get_permalink($menu_item->object_id).'">
                                         <div class="hover-text">
                                             <span class="img-title">'.$menu_item->title.'</span>
+                                            <p class="more-link">View More</p>
                                         </div>
                                         <div class="hover-img">'. get_the_post_thumbnail($menu_item->object_id,'medium').'</div>
                                     </a>

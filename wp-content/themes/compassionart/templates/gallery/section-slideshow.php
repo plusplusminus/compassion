@@ -18,7 +18,7 @@
 
 
 
-<section id="slideshow" style="margin-top: -25px; background-color: #fff;">
+<section id="slideshow" style="margin-top: -25px; background-color: #fff;" class="container">
 	<div class="slideshow-full slideshow-home">
 
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -30,15 +30,6 @@
 			    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
 			    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
 			  </ol>
-
-				<div class="heading-text-slideshow">
-						<div class="inner container">
-							<h2 class="slideshow-heading">We love what we do because photography allows us to show others how we see the world</h2>
-							<p>
-								<a href="#" target="_blank" class="btn btn-dark">Work</a><a href="#" target="_blank" class="btn btn-dark">Book Us</a><a href="#" target="_blank" class="btn btn-dark">About</a>
-							</p>
-						</div>
-				</div>
 
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner">
