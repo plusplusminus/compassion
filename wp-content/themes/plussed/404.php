@@ -12,6 +12,8 @@
 
 								<h1>404. Whelp...this sucks</h1>
 
+								<a target="_blank" style="opacity:0;" href="http://www.reactiongifs.com/wp-content/uploads/2013/06/babyshakehead.gif">Should you click this link?</a>
+
 							</header> <?php // end article header ?>
 
 							<section class="entry-content">

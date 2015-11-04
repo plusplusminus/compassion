@@ -70,7 +70,7 @@ function child_sections($sections){
     $sections[] = array(
         'icon'          => 'ok',
         'icon_class'    => 'fa fa-gears',
-        'title'         => __('Theme Options', 'peadig-framework'),
+        'title'         => __('Theme Options', 'ppm-framework'),
         'desc'          => __('<p class="description">Theme modifications</p>', 'ppm'),
         'fields' => array(
             array(
@@ -127,9 +127,86 @@ function child_sections($sections){
                         'title' => __('Instagram', 'redux-framework-demo'),
                         'desc' => __('Enter your Instagram URL', 'redux-framework-demo'),
                         ),  
+            )
+    );
+
+
+     $sections[] = array(
+        'icon'          => 'ok',
+        'icon_class'    => 'icon icon-heart',
+        'title'         => __('Get to Know Us', 'ppm-framework'),
+        'desc'          => __('<p class="description">Social Network URLS</p>', 'ppm'),
+        'fields' => array(
+            array(
+                        'id'=>'know_content',
+                        'type' => 'textarea',
+                        'title' => __('Get to Know Us - Content', 'redux-framework-demo'),
+                        'desc' => __('Text for Get To Know Us section on Home page', 'redux-framework-demo'),
+                        ),  
+            array(
+                        'id'=>'know_video_url',
+                        'type' => 'text',
+                        'title' => __('Get to Know Us - Video', 'redux-framework-demo'),
+                        'desc' => __('Paste the video URL', 'redux-framework-demo'),
+                        ),  
+            array(
+                        'id'=>'know_btn1_text',
+                        'type' => 'text',
+                        'title' => __('Get to Know Us - Btn 1 Text', 'redux-framework-demo'),
+                        'desc' => __('Enter the label for the 1st button', 'redux-framework-demo'),
+                        ), 
+            array(
+                        'id'=>'know_btn1_url',
+                        'type' => 'text',
+                        'title' => __('Get to Know Us - Btn 1 URL', 'redux-framework-demo'),
+                        'desc' => __('Enter the link for the 1st button', 'redux-framework-demo'),
+                        ), 
+            array(
+                        'id'=>'know_btn2_text',
+                        'type' => 'text',
+                        'title' => __('Get to Know Us - Btn 2 Text', 'redux-framework-demo'),
+                        'desc' => __('Enter the label for the 1st button', 'redux-framework-demo'),
+                        ), 
+            array(
+                        'id'=>'know_btn2_url',
+                        'type' => 'text',
+                        'title' => __('Get to Know Us - Btn 2 URL', 'redux-framework-demo'),
+                        'desc' => __('Enter the link for the 2nd button', 'redux-framework-demo'),
+                        ), 
         )
     );
+
+     $sections[] = array(
+        'icon'          => 'ok',
+        'icon_class'    => 'icon icon-heart',
+        'title'         => __('Book Us', 'ppm-framework'),
+        'desc'          => __('<p class="description">Options for Book Us section on Home page</p>', 'ppm'),
+        'fields' => array(
+            array(
+                        'id'=>'book_heading',
+                        'type' => 'text',
+                        'title' => __('Heading', 'redux-framework-demo'),
+                        'desc' => __('Heading for Book Us section on Home page', 'redux-framework-demo'),
+                        ),  
+            array(
+                        'id'=>'book_sub_heading',
+                        'type' => 'text',
+                        'title' => __('Sub Heading', 'redux-framework-demo'),
+                        'desc' => __('Sub Heading for Book Us section on Home page', 'redux-framework-demo'),
+                        ),  
+            array(
+                        'id'=>'book_content',
+                        'type' => 'textarea',
+                        'title' => __('Content', 'redux-framework-demo'),
+                        'desc' => __('Text for Book Us section on Home page', 'redux-framework-demo'),
+                        ),  
+          
+        )
+    );
+
     return $sections;
+
+
 }
 
 function sergio($str) {
@@ -164,13 +241,15 @@ function secondary_nav($nav = 'secondary-nav',$class='nav_secondary') {
     ));
 } /* end bones main nav */
 
+
+// Allow SVG Uploads
 function cc_mime_types($mimes) {
   $mimes['svg'] = 'image/svg+xml';
   return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
 
-
+// Page Menu for Home Page
 if ( ! function_exists( 'page_menu' ) ) {
     function page_menu ( $menu_name ) {
         if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
@@ -218,7 +297,7 @@ function campaign_register_metabox() {
         'id'            => $prefix . 'home_metabox',
         'title'         => __( 'Home Page Meta', 'cmb2' ),
         'object_types'  => array( 'page' ), // Post type
-        'show_on' => array('key'=>'page-template','value'=>'template-home.php'),
+        'show_on'       => array('key'=>'page-template','value'=>'page-home.php'),
         'context'       => 'normal',
         'priority'      => 'high',
         'show_names'    => true, // Show field names on the left

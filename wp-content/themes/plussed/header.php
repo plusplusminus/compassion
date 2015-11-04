@@ -19,12 +19,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
-		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico?v=2">
+		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
+		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png?v=2">
 		<!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
 		<?php // or, set /favicon.ico for IE10 win ?>
 		<meta name="msapplication-TileColor" content="#f01d4f">
+		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
@@ -58,11 +60,12 @@
 
             <div class="navbar-collapse collapse navbar-responsive-collapse">
               <?php bones_main_nav(); ?>
-
             </div>
           </div>
         </div> 
         
       </nav>
 
-		</header> <?php // end header ?>
+	</header> <?php // end header ?>
+
+

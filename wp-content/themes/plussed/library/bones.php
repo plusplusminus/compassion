@@ -39,15 +39,7 @@ function bones_ahoy() {
     // launching this stuff after theme setup
     bones_theme_support();
 
-    // adding sidebars to Wordpress (these are created in functions.php)
-    add_action( 'widgets_init', 'bones_register_sidebars' );
-    // adding the bones search form (created in functions.php)
-    // add_filter( 'get_search_form', 'bones_wpsearch' );
-
-    // cleaning up random code around images
     add_filter( 'the_content', 'bones_filter_ptags_on_images' );
-    // cleaning up excerpt
-    add_filter( 'excerpt_more', 'bones_excerpt_more' );
 
 } /* end bones ahoy */
 
@@ -79,9 +71,9 @@ function bones_head_cleanup() {
 	// WP version
 	remove_action( 'wp_head', 'wp_generator' );
 	// remove WP version from css
-	add_filter( 'style_loader_src', 'bones_remove_wp_ver_css_js', 9999 );
+	//add_filter( 'style_loader_src', 'bones_remove_wp_ver_css_js', 9999 );
 	// remove Wp version from scripts
-	add_filter( 'script_loader_src', 'bones_remove_wp_ver_css_js', 9999 );
+	//add_filter( 'script_loader_src', 'bones_remove_wp_ver_css_js', 9999 );
 
 } /* end bones head cleanup */
 
@@ -133,7 +125,7 @@ function bones_scripts_and_styles() {
     wp_register_script( 'bones-modernizr', get_template_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
     // register main stylesheet
-    wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+    wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '1.0.31', 'all' );
 
     // ie-only style sheet
     wp_register_style( 'bones-ie-only', get_template_directory_uri() . '/library/css/ie.css', array(), '' );
@@ -241,7 +233,7 @@ function bones_main_nav() {
     	'container' => false,                           			// remove nav container
     	'container_class' => 'menu clearfix',           			// class of container (should you choose to use it)
     	'menu' => __( 'The Main Menu', 'bonestheme' ),  			// nav name
-    	'menu_class' => 'nav navbar-nav navbar-right',  			// adding custom nav class
+    	'menu_class' => 'nav_primary nav navbar-nav navbar-right',				  			// adding custom nav class
     	'theme_location' => 'main-nav',                 			// where it's located in the theme
     	'before' => '',                                 			// before the menu
       'after' => '',                                  			// after the menu
@@ -337,13 +329,6 @@ RANDOM CLEANUP ITEMS
 // remove the p from around imgs (http://css-tricks.com/snippets/wordpress/remove-paragraph-tags-from-around-images/)
 function bones_filter_ptags_on_images($content){
    return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
-}
-
-// This removes the annoying […] to a Read More link
-function bones_excerpt_more($more) {
-	global $post;
-	// edit here if you like
-return '...</p><p><a class="excerpt-read-more btn btn-primary" href="'. get_permalink($post->ID) . '" title="'. __( 'Read', 'bonestheme' ) . get_the_title($post->ID).'">'. __( 'Read More', 'bonestheme' ) .'</a>';
 }
 
 /*
