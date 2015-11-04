@@ -8,7 +8,7 @@ Template Name: Content Page Template
 	
 	<div id="content-wrapper">
 	
-		<?php get_template_part('templates/home/section','slideshow'); ?>
+		<?php get_template_part('templates/section','slideshow'); ?>
 
 		<section id="page-content">
 			<div class="container">

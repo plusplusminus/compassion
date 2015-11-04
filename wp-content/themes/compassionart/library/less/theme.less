@@ -9,12 +9,22 @@ a.navbar-brand {
   text-indent: -9999px;
   margin: auto;
   float: none;
+  padding: 0;
 }
+
+#menu-primary-navigation{
+  .menu-item{
+    a{
+
+    }
+  }
+}
+
 #content-wrapper {
-  margin-top: 45px;
+
 }
 body section {
-  padding-top: 45px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 body section h2.section-title {
@@ -29,8 +39,15 @@ body section p {
   margin-bottom: 20px;
 }
 body section#slideshow {
-  margin-top: 60px;
+  margin-top: -60px;
   background-color: #eeeeee;
+  .item{
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
 }
 body section#slideshow h2.slideshow-heading {
   text-transform: uppercase;
@@ -486,10 +503,6 @@ body .gform_wrapper .gform_footer input[type=submit] .badge {
   width: 55px;
 }
 
-.navbar-inverse li a{
-  font-size: 30px;
-}
-
 
 body .gform_wrapper .gform_footer input[type=submit]{
   padding: 10px 23px;
@@ -604,9 +617,6 @@ body section#slideshow{
 	background-color: #000;
 }
 
-.header .navbar{
-	height: 112px;
-}
 .heading-text-slideshow{
 	position: absolute;
 	text-align: center;

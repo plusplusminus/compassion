@@ -1,5 +1,10 @@
 <?php 
 	global $post;
+	global $tpb_options; 
+	$entries = get_post_meta( get_the_ID(), 'btn_group', true );
+
+	$slideshowheading = get_post_meta( get_the_ID(), '_ppm_slider_text', true );
+
    	$post_thumbnail_id = get_post_thumbnail_id();
    	$args = array(
        'order'          => 'ASC',
@@ -18,7 +23,7 @@
 
 
 
-<section id="slideshow" style="margin-top: -25px; background-color: #fff;">
+<section id="slideshow">
 	<div class="slideshow-full slideshow-home">
 
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -33,9 +38,19 @@
 
 				<div class="heading-text-slideshow">
 						<div class="inner container">
-							<h2 class="slideshow-heading">We love what we do because photography allows us to show others how we see the world</h2>
+							<h2 class="slideshow-heading"><?php echo $slideshowheading ?></h2>
 							<p>
-								<a href="#" target="_blank" class="btn btn-dark">Work</a><a href="#" target="_blank" class="btn btn-dark">Book Us</a><a href="#" target="_blank" class="btn btn-dark">About</a>
+							<?php foreach ( (array) $entries as $key => $entry ) {
+							    $btntitle = $btnlink = '';
+							    if ( isset( $entry['btntitle'] ) )
+							        $btntitle = esc_html( $entry['btntitle'] );
+							    if ( isset( $entry['btnlink'] ) )
+							        $btnlink = esc_html( $entry['btnlink'] );
+
+							    	if ( isset( $entry['btntitle'] ) ) { ?>
+							    		<a href="<?php echo $btnlink ?>" target="_blank" class="btn btn-dark"><?php echo $btntitle ?></a>
+							    	<?php } ?>
+							    <?php } ?>
 							</p>
 						</div>
 				</div>

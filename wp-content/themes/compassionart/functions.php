@@ -411,15 +411,15 @@ function campaign_register_metabox() {
     // Id's for group's fields only need to be unique for the group. Prefix is not needed.
     $pageoptions_meta->add_group_field( $group_field_id, array(
         'name' => 'Button Title',
-        'id'   => 'title',
+        'id'   => 'btntitle',
         'type' => 'text',
         // 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
     ) );
 
     $pageoptions_meta->add_group_field( $group_field_id, array(
         'name' => 'Button Link',
-        'id'   => 'description',
-        'type' => 'text',
+        'id'   => 'btnlink',
+        'type' => 'text',   
     ) );
 
 

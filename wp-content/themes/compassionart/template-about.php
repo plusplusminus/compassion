@@ -173,7 +173,7 @@ Template Name: About Us Template
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> 
 	</section>
 </div><!--content-wrapper-->
 

@@ -8,7 +8,7 @@ Template Name: Home Page Template
 	
 	<div id="content-wrapper">
 	
-		<?php get_template_part('templates/home/section','slideshow'); ?>
+		<?php get_template_part('templates/section','slideshow'); ?>
 
 		<?php get_template_part('templates/home/section','know'); ?>
 

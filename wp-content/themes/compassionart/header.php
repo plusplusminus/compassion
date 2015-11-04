@@ -63,24 +63,31 @@
 					<div class="col-lg-10 col-lg-offset-1">
 						<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-md-4">
 								<div class="navbar-header">
 					  				<a class="navbar-brand" href="<?php bloginfo('url');?>" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo('name'); ?></a>
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="social-menu">
-									<ul id="menu-secondary-na" class="list-inline">
-										<li><a href="<?php echo $twitter; ?>"><span class="fa fa-twitter"></span></a></li>
-										<li><a href="<?php echo $facebook; ?>"><span class="fa fa-facebook"></span></a></li>
-										<li><a href="<?php echo $pinterest; ?>"><span class="fa fa-pinterest"></span></a></li>
-										<li><a href="<?php echo $instagram; ?>"><span class="fa fa-instagram"></span></a></li>
-									</ul>
+							<div class="col-md-8">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="social-menu">
+											<ul id="menu-secondary-na" class="list-inline pull-right">
+												<li><a href="<?php echo $twitter; ?>"><span class="fa fa-twitter"></span></a></li>
+												<li><a href="<?php echo $facebook; ?>"><span class="fa fa-facebook"></span></a></li>
+												<li><a href="<?php echo $pinterest; ?>"><span class="fa fa-pinterest"></span></a></li>
+												<li><a href="<?php echo $instagram; ?>"><span class="fa fa-instagram"></span></a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="navbar-collapse collapse navbar-responsive-collapse">
+											<?php bones_main_nav(); ?>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="navbar-collapse collapse navbar-responsive-collapse">
-							<?php bones_main_nav(); ?>
+
 						</div>
 					</div>
 				</div>

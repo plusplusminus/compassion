@@ -20,7 +20,7 @@
 	$image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
 ?>
 
-<section id="features">
+<section id="latest-work">
 	<div class="container">
 		<h2 class="text-center section-title">Latest <?php echo $category ?></h2>
 		<div class="row">
