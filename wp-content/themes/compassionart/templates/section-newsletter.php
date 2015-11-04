@@ -1,20 +1,17 @@
+<?php global $tpb_options; ?>
+<?php $title = $tpb_options['newsletter_heading']; ?>
+<?php $subtitle = $tpb_options['newsletter_sub_heading']; ?>
+<?php $content = $tpb_options['newsletter_content']; ?>
+
+<a name="bookus"></a> 
 	<section id="our-newsletter">
 			<div class="container text-center">
-				<h2 class="section-title">Get our Newsletter</h2>
+				<h2 class="section-title"><?php echo $title; ?></h2>
 					<div class="col-md-6 col-md-offset-3">
-						<p>Be inspired, be Entertained, See Passion in Action, sign up!</p>
+						<p><strong><?php echo $subtitle; ?></strong></p>
 							<div class="newsletter-form-gravity">
 								<?php gravity_form(2, false, false, false, '', true, 12); ?>
-								</div>
-
-						<!-- <div class="newsletter-form">
-							<form class="form-inline" role="form">
-							  <div class="form-group">
-							    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email Address">
-							  </div>
-							  <button type="submit" class="btn btn-default">Sign up</button>
-							</form>
-						</div> -->
+							</div>
 					</div>
-				</div>
+			</div>
 	</section>

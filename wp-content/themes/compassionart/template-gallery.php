@@ -17,7 +17,6 @@ Template Name: Galllery Template
 					<div class="row">
 						
 						<div class="col-md-6">
-						XXX
 							<?php do_action( 'woothemes_testimonials', array( 'limit' => 1, 'orderby' => 'rand', 'category' => 'wedding' ) ); ?>
 						</div>
 						
@@ -36,6 +35,8 @@ Template Name: Galllery Template
 	</section><!--/#section-->
 
 	<?php get_template_part('templates/gallery/section','latest'); ?>
+
+	<?php get_template_part('templates/gallery/section','features'); ?>
 
 </div>
 <?php get_footer(); ?>

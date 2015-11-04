@@ -16,8 +16,6 @@
                                
 ?>
 
-
-
 <section id="slideshow" style="margin-top: -25px; background-color: #fff;" class="container">
 	<div class="slideshow-full slideshow-home">
 

@@ -1,5 +1,11 @@
 <!doctype html>
 
+<?php global $tpb_options; ?>
+<?php $twitter = $tpb_options['twitter_url']; ?>
+<?php $facebook = $tpb_options['facebook_url']; ?>
+<?php $pinterest = $tpb_options['pinterest_url']; ?>
+<?php $instagram = $tpb_options['instagram_url']; ?>
+
 <!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
@@ -65,10 +71,10 @@
 							<div class="col-md-6">
 								<div class="social-menu">
 									<ul id="menu-secondary-na" class="list-inline">
-										<li><a href="https://twitter.com/Compassion_Art"><span class="fa fa-twitter"></span></a></li>
-										<li><a href="https://www.facebook.com/pages/Compassion-Art/138330732904548?ref=hl"><span class="fa fa-facebook"></span></a></li>
-										<li><a href="http://www.pinterest.com/compassionartph/"><span class="fa fa-pinterest"></span></a></li>
-										<li><a href="http://instagram.com/compassionart"><span class="fa fa-instagram"></span></a></li>
+										<li><a href="<?php echo $twitter; ?>"><span class="fa fa-twitter"></span></a></li>
+										<li><a href="<?php echo $facebook; ?>"><span class="fa fa-facebook"></span></a></li>
+										<li><a href="<?php echo $pinterest; ?>"><span class="fa fa-pinterest"></span></a></li>
+										<li><a href="<?php echo $instagram; ?>"><span class="fa fa-instagram"></span></a></li>
 									</ul>
 								</div>
 							</div>

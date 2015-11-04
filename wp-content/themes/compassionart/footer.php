@@ -1,3 +1,9 @@
+<?php global $tpb_options; ?>
+<?php $twitter = $tpb_options['twitter_url']; ?>
+<?php $facebook = $tpb_options['facebook_url']; ?>
+<?php $pinterest = $tpb_options['pinterest_url']; ?>
+<?php $instagram = $tpb_options['instagram_url']; ?>
+
 	<footer id="footer" class="clearfix">
 	  <div id="footer-widgets">
 
@@ -39,10 +45,10 @@
 		  <!-- adding the social icons here -->
 			  <div class="social-menu text-center social-footer">
 			  	<ul id="menu-secondary-na" class="list-inline">
-					<li><a href="https://twitter.com/Compassion_Art"><span class="fa fa-twitter"></span></a></li>
-					<li><a href="https://www.facebook.com/pages/Compassion-Art/138330732904548?ref=hl"><span class="fa fa-facebook"></span></a></li>
-					<li><a href="http://www.pinterest.com/compassionartph/"><span class="fa fa-pinterest"></span></a></li>
-					<li><a href="http://instagram.com/compassionart"><span class="fa fa-instagram"></span></a></li>
+					<li><a href="<?php echo $twitter; ?>"><span class="fa fa-twitter"></span></a></li>
+					<li><a href="<?php echo $facebook; ?>"><span class="fa fa-facebook"></span></a></li>
+					<li><a href="<?php echo $pinterest; ?>"><span class="fa fa-pinterest"></span></a></li>
+					<li><a href="<?php echo $instagram; ?>"><span class="fa fa-instagram"></span></a></li>
 				</ul>
 			</div>
 			<div class="col-md-4 copyright">

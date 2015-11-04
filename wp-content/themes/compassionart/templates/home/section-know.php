@@ -1,19 +1,28 @@
+<?php global $tpb_options; ?>
+<?php $title = $tpb_options['know_heading']; ?>
+<?php $content = $tpb_options['know_content']; ?>
+<?php $video = $tpb_options['know_video_url']; ?>
+<?php $btn1title = $tpb_options['know_btn1_text']; ?>
+<?php $btn1url = $tpb_options['know_btn1_url']; ?>
+<?php $btn2title = $tpb_options['know_btn2_text']; ?>
+<?php $btn2url = $tpb_options['know_btn2_url']; ?>
+
+
+<a name="knowus"></a>
 	<section id="know-us">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-10 col-lg-offset-1">
 					<div class="row">
 						<div class="col-md-6">
-							<h2 class="section-title">Get to know us</h2>
-							<p>This is us having some fun!</p><p><strong>Come have a look!</strong></p>
+							<h2 class="section-title"><?php echo $title; ?></h2>
+							<p><?php echo $content; ?></p>
+							<p><?php echo $btn1title, $btn1url; ?></p>
+							<p><?php echo $btn2title; ?></p>
 						</div>
 						<div class="col-md-6">
-							<a href="#" data-toggle="modal" data-target="#videoModal" class="video-play">
-								<div class="vertical overlay">
-								<span class="play"><i class="fa fa-play fa-4x text-light"></i></span>
-								</div>
-								<img class="img-responsive" src="<?php bloginfo('stylesheet_directory' );?>/library/images/video3.png">
-							</a>
+							<p><?php echo $video; ?></p>
+
 						</div>
 					</div>
 				</div>

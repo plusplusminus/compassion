@@ -96,7 +96,6 @@ function child_sections($sections){
         )
     );
 
-
      $sections[] = array(
         'icon'          => 'ok',
         'icon_class'    => 'icon icon-heart',
@@ -135,42 +134,48 @@ function child_sections($sections){
         'icon'          => 'ok',
         'icon_class'    => 'icon icon-heart',
         'title'         => __('Get to Know Us', 'ppm-framework'),
-        'desc'          => __('<p class="description">Social Network URLS</p>', 'ppm'),
+        'desc'          => __('<p class="description"></p>', 'ppm'),
         'fields' => array(
+            array(
+                        'id'=>'know_heading',
+                        'type' => 'text',
+                        'title' => __('Heading', 'redux-framework-demo'),
+                        'desc' => __('Heading for Get To Know Us section on Home page', 'redux-framework-demo'),
+                        ),  
             array(
                         'id'=>'know_content',
                         'type' => 'textarea',
-                        'title' => __('Get to Know Us - Content', 'redux-framework-demo'),
+                        'title' => __('Content', 'redux-framework-demo'),
                         'desc' => __('Text for Get To Know Us section on Home page', 'redux-framework-demo'),
                         ),  
             array(
                         'id'=>'know_video_url',
                         'type' => 'text',
-                        'title' => __('Get to Know Us - Video', 'redux-framework-demo'),
+                        'title' => __('Video', 'redux-framework-demo'),
                         'desc' => __('Paste the video URL', 'redux-framework-demo'),
                         ),  
             array(
                         'id'=>'know_btn1_text',
                         'type' => 'text',
-                        'title' => __('Get to Know Us - Btn 1 Text', 'redux-framework-demo'),
+                        'title' => __('Btn 1 Text', 'redux-framework-demo'),
                         'desc' => __('Enter the label for the 1st button', 'redux-framework-demo'),
                         ), 
             array(
                         'id'=>'know_btn1_url',
                         'type' => 'text',
-                        'title' => __('Get to Know Us - Btn 1 URL', 'redux-framework-demo'),
+                        'title' => __('Btn 1 URL', 'redux-framework-demo'),
                         'desc' => __('Enter the link for the 1st button', 'redux-framework-demo'),
                         ), 
             array(
                         'id'=>'know_btn2_text',
                         'type' => 'text',
-                        'title' => __('Get to Know Us - Btn 2 Text', 'redux-framework-demo'),
+                        'title' => __('Btn 2 Text', 'redux-framework-demo'),
                         'desc' => __('Enter the label for the 1st button', 'redux-framework-demo'),
                         ), 
             array(
                         'id'=>'know_btn2_url',
                         'type' => 'text',
-                        'title' => __('Get to Know Us - Btn 2 URL', 'redux-framework-demo'),
+                        'title' => __('Btn 2 URL', 'redux-framework-demo'),
                         'desc' => __('Enter the link for the 2nd button', 'redux-framework-demo'),
                         ), 
         )
@@ -204,6 +209,33 @@ function child_sections($sections){
         )
     );
 
+     $sections[] = array(
+        'icon'          => 'ok',
+        'icon_class'    => 'icon icon-heart',
+        'title'         => __('Get Our Newsletter', 'ppm-framework'),
+        'desc'          => __('<p class="description"></p>', 'ppm'),
+        'fields' => array(
+            array(
+                        'id'=>'newsletter_heading',
+                        'type' => 'text',
+                        'title' => __('Heading', 'redux-framework-demo'),
+                        'desc' => __('Heading for Newsletter section on Home page', 'redux-framework-demo'),
+                        ),  
+            array(
+                        'id'=>'newsletter_sub_heading',
+                        'type' => 'text',
+                        'title' => __('Sub Heading', 'redux-framework-demo'),
+                        'desc' => __('Sub Heading for Newsletter section on Home page', 'redux-framework-demo'),
+                        ),  
+            array(
+                        'id'=>'newsletter_content',
+                        'type' => 'textarea',
+                        'title' => __('Content', 'redux-framework-demo'),
+                        'desc' => __('Text for Newsletter section on Home page', 'redux-framework-demo'),
+                        ),  
+          
+        )
+    );
     return $sections;
 
 
