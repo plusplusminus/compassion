@@ -339,10 +339,10 @@ function campaign_register_metabox() {
         'type'             => 'text',
     ) );
 
-    $post_meta = new_cmb2_box( array(
+    $pageoptions_meta = new_cmb2_box( array(
         'id'            => $prefix . 'post_metabox',
-        'title'         => __( 'Post Meta', 'cmb2' ),
-        'object_types'  => array( 'post' ), // Post type
+        'title'         => __( 'Page Options', 'cmb2' ),
+        'object_types'  => array( 'page', ),
         'context'       => 'normal',
         'priority'      => 'high',
         'show_names'    => true, // Show field names on the left
@@ -350,20 +350,40 @@ function campaign_register_metabox() {
         // 'closed'     => true, // true to keep the metabox closed by default
     ) );
 
-
-    $post_meta->add_field( array(
-        'name'             => 'Quote',
-        'desc'             => 'Enter quote...',
-        'id'               => $prefix.'quote_text',
-        'type'             => 'textarea_small',
-    ) );
-
-    $post_meta->add_field( array(
-        'name'             => 'Quote Citation',
-        'desc'             => 'Enter the quote citation...',
-        'id'               => $prefix.'quote_cite',
+    $pageoptions_meta->add_field( array(
+        'name'             => 'Slider Text',
+        'desc'             => 'Enter text to appear on the slider',
+        'id'               => $prefix.'slider_text',
         'type'             => 'text',
     ) );
+
+    $group_field_id = $pageoptions_meta->add_field( array(
+        'id'          => 'btn_group',
+        'type'        => 'group',
+        'description' => __( 'Generates reusable form entries', 'cmb' ),
+        'options'     => array(
+            'group_title'   => __( 'Button {#}', 'cmb' ), // since version 1.1.4, {#} gets replaced by row number
+            'add_button'    => __( 'Add Another Entry', 'cmb' ),
+            'remove_button' => __( 'Remove Entry', 'cmb' ),
+            'sortable'      => true, // beta
+            // 'closed'     => true, // true to have the groups closed by default
+        ),
+    ) );
+
+    // Id's for group's fields only need to be unique for the group. Prefix is not needed.
+    $pageoptions_meta->add_group_field( $group_field_id, array(
+        'name' => 'Button Title',
+        'id'   => 'title',
+        'type' => 'text',
+        // 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+    ) );
+
+    $pageoptions_meta->add_group_field( $group_field_id, array(
+        'name' => 'Button Link',
+        'id'   => 'description',
+        'type' => 'text',
+    ) );
+
 
     $category_meta = new_cmb2_box( array(
         'id'            => $prefix . 'category_metabox',
