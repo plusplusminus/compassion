@@ -9,7 +9,7 @@
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4" style="padding-top: 17px;">
 						
 						<h2 class="section-title"><?php echo $title; ?></h2>
 						<?php if (( '' != $subtitle)) { ?>

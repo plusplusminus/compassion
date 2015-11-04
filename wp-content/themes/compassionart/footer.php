@@ -6,11 +6,8 @@
 
 	<footer id="footer" class="clearfix">
 	  <div id="footer-widgets">
-
 		<div class="container">
-
 		<div id="footer-wrapper">
-
 		  <div class="row">
 			<div class="col-sm-6 col-md-3">
 			  <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-1') ) : ?>
@@ -51,7 +48,7 @@
 					<li><a href="<?php echo $instagram; ?>"><span class="fa fa-instagram"></span></a></li>
 				</ul>
 			</div>
-			<div class="col-md-4 copyright">
+			<div class="col-md-12 text-center">
 			  &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.
 			</div>
 		  </div> <!-- end .row -->

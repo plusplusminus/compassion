@@ -8,10 +8,10 @@
 			<div class="container text-center">
 				<h2 class="section-title"><?php echo $title; ?></h2>
 					<div class="col-md-6 col-md-offset-3">
-						<p><strong><?php echo $subtitle; ?></strong></p>
-							<div class="newsletter-form-gravity">
-								<?php gravity_form(2, false, false, false, '', true, 12); ?>
-							</div>
+						<p><?php echo $subtitle; ?></p>
+						<div class="newsletter-form-gravity">
+							<?php gravity_form(2, false, false, false, '', true, 12); ?>
+						</div>
 					</div>
 			</div>
 	</section>
