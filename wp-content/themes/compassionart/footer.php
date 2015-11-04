@@ -71,7 +71,12 @@
 				</div><!--/.modal-header-->
 				<div class="modal-body">
 					<div class="video-container">
-					<iframe src="//player.vimeo.com/video/104082937?title=0&amp;byline=0&amp;portrait=0" width="853" height="479" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>					</div>
+					<?php
+						$videourl = $tpb_options['know_video_url'];
+ 						$embed_code = wp_oembed_get($videourl, array('width'=>900)); 
+ 						echo $embed_code;
+					?>
+					</div>
 				</div>
 			</div><!--/.modal-content-->
 		</div>

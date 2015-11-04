@@ -149,11 +149,17 @@ function child_sections($sections){
                         'desc' => __('Text for Get To Know Us section on Home page', 'redux-framework-demo'),
                         ),  
             array(
+                        'id'=>'know_video_thumb',
+                        'type' => 'media',
+                        'title' => __('Video', 'redux-framework-demo'),
+                        'desc' => __('Upload a Video Thumbnail Image', 'redux-framework-demo'),
+                        ),  
+            array(
                         'id'=>'know_video_url',
                         'type' => 'text',
                         'title' => __('Video', 'redux-framework-demo'),
                         'desc' => __('Paste the video URL', 'redux-framework-demo'),
-                        ),  
+                        ), 
             array(
                         'id'=>'know_btn1_text',
                         'type' => 'text',

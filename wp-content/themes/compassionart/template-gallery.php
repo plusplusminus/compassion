@@ -22,6 +22,8 @@ Template Name: Galllery Template
 						
 						<div class="col-md-6">
 							<div class="gallery-content-text">
+								<?php get_template_part('templates/gallery/section','slideshow'); ?>
+
 								<h2 class="section-title">Let's do a photoshoot</h2>
 								<?php the_content(); ?>
 								<a href="#" class="btn btn-default">Enquire Now</a>
