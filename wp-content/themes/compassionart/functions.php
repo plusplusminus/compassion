@@ -367,9 +367,14 @@ function campaign_register_metabox() {
 
     $category_meta = new_cmb2_box( array(
         'id'            => $prefix . 'category_metabox',
-        'title'         => __( 'Page Meta', 'cmb2' ),
+        'title'         => __( 'Portfolio Options', 'cmb2' ),
         'object_types'  => array( 'page' ), // Post type
-        'show_on'      => array( 'key' => 'page-template', 'value' => array('template-about.php','template-portfolio.php' )),
+        'show_on'      => array( 'key' => 'page-template',
+                                 'value' => array(
+                                    'template-about.php',
+                                    'template-gallery.php'
+                                    )
+                                ),
         'context'       => 'normal',
         'priority'      => 'high',
         'show_names'    => true, // Show field names on the left
@@ -379,8 +384,8 @@ function campaign_register_metabox() {
 
 
     $category_meta->add_field( array(
-        'name'     => 'Category Select',
-        'desc'     => 'Description Goes Here',
+        'name'     => 'Category',
+        'desc'     => 'Select the connected category for content',
         'id'       => $prefix.'category_select',
         'taxonomy' => 'category', 
         'type'     => 'taxonomy_select',

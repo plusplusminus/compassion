@@ -7,14 +7,13 @@
 	if ( get_query_var( 'page' ) ) { $paged = get_query_var( 'page' ); }
 	$paged = intval( $paged );
 
-	// $category = get_post_meta($post->ID,'_ppm_category_select',true);
-	$category = "Wedding";
+	$category = get_post_meta($post->ID,'_ppm_category_select',true);
 
 	$query_args = array(
 		'post_type' => 'post',
 		'paged' => $paged,
 		'posts_per_page'    => 3,
-		'cat' => $category[0]
+		'cat' => $category
 	);
 
 	query_posts($query_args);
@@ -23,7 +22,7 @@
 
 <section id="latest-work">
 	<div class="container">
-		<h2 class="text-center section-title">Latest WEDDINGSXXX</h2>
+		<h2 class="text-center section-title">Latest <?php echo $category ?> work</h2>
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1">
 				<div class="row">
@@ -45,6 +44,7 @@
 						<?php endwhile; ?>
 					<?php endif; ?>
 				</div>
+
 				<?php wp_reset_query(); ?>
 
 			</div>
