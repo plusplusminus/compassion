@@ -1,7 +1,7 @@
 <?php 
 global $tpb_options; 
 global $post;
-$shortcode = get_post_meta( get_the_ID(), '_ppm_category_select', true );
+$shortcode = get_post_meta( get_the_ID(), '_ppm_gallery_shortcode', true );
 
 ?>
 <section id="gallery-children">
@@ -29,7 +29,7 @@ $shortcode = get_post_meta( get_the_ID(), '_ppm_category_select', true );
 		</div>
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1">
-				<?php echo do_shortcode('['.$shortcode;.']'); ?>
+				<?php echo do_shortcode($shortcode); ?>
 			</div>
 		</div>
 	</div>
