@@ -445,8 +445,7 @@ function campaign_register_metabox() {
         'name'     => 'Category',
         'desc'     => 'Select the connected category for content',
         'id'       => $prefix.'category_select',
-        'taxonomy' => 'category', 
-        'type'     => 'taxonomy_select',
+        'type'     => 'text',
     ) );
    
 

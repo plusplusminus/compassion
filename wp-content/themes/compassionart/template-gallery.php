@@ -2,13 +2,13 @@
 /*
 Template Name: Galllery Template
 */
+global $post;
+get_header();
+$category = get_post_meta($post->ID,'_ppm_category_select',true);
 ?>
-
-<?php get_header(); ?>
-
 <div id="content-wrapper">
 	
-	<?php get_template_part('templates/section','slideshow'); ?>
+	
 
 	<section id="gallery-content">
 		<div class="container">
@@ -17,7 +17,8 @@ Template Name: Galllery Template
 					<div class="row">
 						
 						<div class="col-md-6">
-							<?php do_action( 'woothemes_testimonials', array( 'limit' => 1, 'orderby' => 'rand', 'category' => 'wedding' ) ); ?>
+						
+							<?php do_action( 'woothemes_testimonials', array( 'limit' => 1, 'orderby' => 'rand', 'category' => $category ) ); ?>
 						</div>
 						
 						<div class="col-md-6">

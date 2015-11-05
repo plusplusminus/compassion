@@ -13,7 +13,7 @@
 		'post_type' => 'post',
 		'paged' => $paged,
 		'posts_per_page'    => 3,
-		'cat' => $category
+		'category_name' => $category
 	);
 
 	query_posts($query_args);
@@ -22,7 +22,7 @@
 
 <section id="latest-work">
 	<div class="container">
-		<h2 class="text-center section-title">Latest <?php echo $category ?></h2>
+		<h2 class="text-center section-title">Latest <?php echo $category ?> work</h2>
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1">
 				<div class="row">
