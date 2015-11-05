@@ -29,7 +29,7 @@ $shortcode = get_post_meta( get_the_ID(), '_ppm_category_select', true );
 		</div>
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1">
-				<?php echo $shortcode;?>
+				<?php echo do_shortcode('[echo $shortcode;]'); ?>
 			</div>
 		</div>
 	</div>
