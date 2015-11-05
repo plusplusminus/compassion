@@ -1,4 +1,7 @@
 /* Theme Custom Files */
+.btn:hover{
+  background-color: #ebebeb;
+}
 /*header*/
 a.navbar-brand {
   display: block;
@@ -215,6 +218,22 @@ body section#gallery-content {
 }
 body section#gallery-content .gallery-content-text {
   padding-top: 52px;
+}
+
+ul.page-children{
+  li{
+    a{
+      .btn();
+      .btn-default();
+      .btn-sm();
+      &:hover{
+        background-color: #ebebeb;
+      }
+    }
+    &.current_page_item a{
+      background-color: #ebebeb;
+    }
+  }
 }
 
 body section#gallery-content .quote{

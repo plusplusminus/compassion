@@ -18,7 +18,6 @@
    $attachments = get_posts($args);  
    $count = 0;
 
-                               
 ?>
 
 
@@ -58,11 +57,15 @@
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner">
 
-			  	<?php foreach ($attachments as $attachment) { $count++; $image_attributes = wp_get_attachment_image_src( $attachment->ID,'full'); ?>
-			  		<div class="item <?php if ($count == 1) echo 'active'; ?>">
-				      	<img class="img-responsive" src="<?php echo $image_attributes[0]; ?>">
-				    </div>
-               	<?php } ?>
+				<?php $sliderfiles = get_post_meta( $post->ID, '_ppm_slider_file_list', true ); ?>
+				<?php if (!empty($sliderfiles)) : ?>
+				      <?php foreach ($sliderfiles as $key => $image) :  $count++; ?>
+				       		<?php $image_attributes_large = wp_get_attachment_image_src( $key,'full' ); ?>
+						  	<div class="item <?php if ($count == 1) echo 'active'; ?>">
+				      			<img class="img-responsive" src="<?php echo $image_attributes_large[0];?>">
+				    		</div>
+					<?php endforeach; ?> 
+				<?php endif; ?>
 			    
 			  </div>
 

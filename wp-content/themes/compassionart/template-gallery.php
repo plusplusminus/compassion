@@ -8,7 +8,7 @@ $category = get_post_meta($post->ID,'_ppm_category_select',true);
 ?>
 <div id="content-wrapper">
 	
-	
+	<?php get_template_part('templates/section','slideshow'); ?>
 
 	<section id="gallery-content">
 		<div class="container">
@@ -34,6 +34,8 @@ $category = get_post_meta($post->ID,'_ppm_category_select',true);
 			</div>
 		</div>
 	</section><!--/#section-->
+
+	<?php get_template_part('templates/gallery/section','children'); ?>
 
 	<?php get_template_part('templates/gallery/section','latest'); ?>
 

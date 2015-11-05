@@ -389,6 +389,14 @@ function campaign_register_metabox() {
     ) );
 
     $pageoptions_meta->add_field( array(
+        'name' => 'Slider Images',
+        'desc' => 'Add the images to be displayed in the page slider at the top of the page',
+        'id'   => $prefix.'slider_file_list',
+        'type' => 'file_list',
+        // 'preview_size' => array( 100, 100 ), // Default: array( 50, 50 )
+    ) );
+
+    $pageoptions_meta->add_field( array(
         'name'             => 'Slider Text',
         'desc'             => 'Enter text to appear on the slider',
         'id'               => $prefix.'slider_text',
