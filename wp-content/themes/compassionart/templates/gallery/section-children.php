@@ -25,7 +25,7 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1">
-				<?php do_shortcode('[ess_grid alias="gallery"]');?>
+				<?php echo do_shortcode('[ess_grid alias="gallery"]');?>
 			</div>
 		</div>
 	</div>
