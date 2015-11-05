@@ -525,4 +525,35 @@ function my_custom_population_function( $value ) {
         return "-";
     }
 }
+
+// Dynamic ESS Grid
+// code can be added to your themes functions.php file
+ 
+add_filter('essgrid_query_caching', 'eg_stop_caching', 10, 2);
+add_filter('essgrid_get_posts', 'eg_mod_query', 10, 2);
+ 
+// turn off caching for your grid
+function eg_stop_caching($do_cache, $grid_id) {
+ 
+    if($grid_id == 1) return false;
+    return true;
+ 
+}
+ 
+function eg_mod_query($query, $grid_id){
+global $post;
+    if($grid_id == 1) {
+        $query = array(
+           'order'          => 'ASC',
+           'post_type'      => 'attachment',
+           'post_parent'    => $post->ID,
+           'post_mime_type' => 'image',
+           'numberposts'    => -1,
+           'orderby' => 'menu_order',
+       );
+    }
+ 
+    return $query;
+ 
+}
 ?>
