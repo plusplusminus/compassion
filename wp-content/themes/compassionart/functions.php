@@ -505,4 +505,12 @@ function ppm_imagelink_setup() {
     }
 }
 add_action('admin_init', 'ppm_imagelink_setup', 10);
+
+// Form Dynamic Population
+add_filter( 'gform_field_value_enquiry_type', 'my_custom_population_function' );
+function my_custom_population_function( $value ) {
+    global $post;
+    $category = get_post_meta($post->ID, '_ppm_category_select', true);
+    return $category;
+}
 ?>

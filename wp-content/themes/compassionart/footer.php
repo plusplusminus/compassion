@@ -57,7 +57,7 @@
 
 	</footer> <!-- end footer -->
 
-<!-- Modal -->
+<!-- Video Modal -->
 <?php if ( is_front_page() || is_home() ) { ?>
 	<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="CompassionArt Video" aria-hidden="true">
 		<div class="modal-dialog">
@@ -79,6 +79,22 @@
 		</div>
 	</div><!--/.modal-->
 <?php };?>
+
+<!-- Enquiry Modal -->
+
+<div class="modal fade" id="workModal" tabindex="-1" role="dialog" aria-labelledby="CompassionArt Video" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a href="#" class="close btn btn-default btn-xs pull-right" data-dismiss="modal" aria-hidden="true">X</a>
+				<h4 class="modal-title" id="myModalLabel">Work With Us</h4>
+			</div><!--/.modal-header-->
+			<div class="modal-body">
+			<?php gravity_form( 3, false, false, false, '', false ); ?>
+			</div>
+		</div><!--/.modal-content-->
+	</div>
+</div><!--/.modal-->
 
 	<!-- all js scripts are loaded in library/bones.php -->
 	<?php wp_footer(); ?>

@@ -25,7 +25,7 @@ $category = get_post_meta($post->ID,'_ppm_category_select',true);
 							<div class="gallery-content-text">
 								<h2 class="section-title">Let's do a photoshoot</h2>
 								<?php the_content(); ?>
-								<a href="#" class="btn btn-default">Enquire Now</a>
+								<a data-toggle="modal" data-target="#workModal" class="btn btn-default">Enquire Now</a>
 							</div>
 						</div>
 
