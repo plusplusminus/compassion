@@ -305,7 +305,7 @@ if ( ! function_exists( 'page_menu' ) ) {
                                             <span class="img-title">'.$menu_item->title.'</span>
                                             <p class="more-link">View More</p>
                                         </div>
-                                        <div class="hover-img">'. get_the_post_thumbnail($menu_item->object_id,'medium').'</div>
+                                        <div class="hover-img">'. get_the_post_thumbnail($menu_item->object_id,'large').'</div>
                                     </a>
                                 </div>';
             }
