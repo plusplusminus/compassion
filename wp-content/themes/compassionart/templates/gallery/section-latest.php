@@ -29,7 +29,7 @@
 
 					<?php if ( have_posts() ) : $count = 0; ?>
 						<?php while ( have_posts() ) : the_post(); $count++;?>
-							<article id="post-<?php the_ID(); ?>" class="col-md-4 article" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+							<article id="post-<?php the_ID(); ?>" class="col-sm-4 article" role="article" itemscope itemtype="http://schema.org/BlogPosting">
 								<a class="hover-block" href="<?php the_permalink(); ?>" title="<?php the_title();?>">
 									<div class="hover-text">
 										<span class="img-title"><?php the_title(); ?></span>

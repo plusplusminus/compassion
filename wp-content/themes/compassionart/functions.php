@@ -299,7 +299,7 @@ if ( ! function_exists( 'page_menu' ) ) {
             
             foreach ( (array) $menu_items as $key => $menu_item ) {
                 $count++;
-                $menu_list .=   '<div class="col-md-4">
+                $menu_list .=   '<div class="col-sm-4">
                                     <a class="hover-block" href="'.get_permalink($menu_item->object_id).'">
                                         <div class="hover-text">
                                             <span class="img-title">'.$menu_item->title.'</span>
@@ -511,6 +511,10 @@ add_filter( 'gform_field_value_enquiry_type', 'my_custom_population_function' );
 function my_custom_population_function( $value ) {
     global $post;
     $category = get_post_meta($post->ID, '_ppm_category_select', true);
-    return $category;
+    if (!empty($category)){
+        return $category;
+    } else {
+        return "-";
+    }
 }
 ?>
