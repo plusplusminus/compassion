@@ -455,6 +455,13 @@ function campaign_register_metabox() {
         'id'       => $prefix.'category_select',
         'type'     => 'text',
     ) );
+
+    $category_meta->add_field( array(
+        'name'     => 'Gallery Shortcode',
+        'desc'     => 'Paste the gallery shortcode here',
+        'id'       => $prefix.'gallery_shortcode',
+        'type'     => 'text',
+    ) );
    
 
 

@@ -1,5 +1,9 @@
-<?php global $tpb_options; ?>
+<?php 
+global $tpb_options; 
+global $post;
+$shortcode = get_post_meta( get_the_ID(), '_ppm_category_select', true );
 
+?>
 <section id="gallery-children">
 	<div class="container">
 		<div class="row">
@@ -25,7 +29,7 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1">
-				<?php echo do_shortcode('[ess_grid alias="gallery"]');?>
+				<?php echo $shortcode;?>
 			</div>
 		</div>
 	</div>
