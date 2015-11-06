@@ -23,8 +23,11 @@ $shortcode = get_post_meta( get_the_ID(), '_ppm_gallery_shortcode', true );
 				}?>
 
 				<ul class="list-inline page-children">
+					<li class="current_page_item"><a href="#">All</a></li>
 				   <?php wp_list_pages(array("child_of" => $ancestor_id, "include" => $incl, "link_before" => "", "title_li" => "", "sort_column" => "menu_order"));?>
 				</ul>
+
+				
 			</div>
 		</div>
 		<div class="row">
